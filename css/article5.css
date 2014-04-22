@@ -1,0 +1,158 @@
+body, html {
+          height: 100%;
+          margin: 0;
+          -webkit-font-smoothing: antialiased;
+          font-weight: 100;
+          background: rgb(243,226,199); /* Old browsers */
+          background: -moz-linear-gradient(-45deg,  rgba(243,226,199,1) 0%, rgba(191,143,72,1) 18%, rgba(137,108,49,1) 51%, rgba(182,141,76,1) 82%, rgba(233,212,179,1) 100%); /* FF3.6+ */
+          background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(243,226,199,1)), color-stop(18%,rgba(191,143,72,1)), color-stop(51%,rgba(137,108,49,1)), color-stop(82%,rgba(182,141,76,1)), color-stop(100%,rgba(233,212,179,1))); /* Chrome,Safari4+ */
+          background: -webkit-linear-gradient(-45deg,  rgba(243,226,199,1) 0%,rgba(191,143,72,1) 18%,rgba(137,108,49,1) 51%,rgba(182,141,76,1) 82%,rgba(233,212,179,1) 100%); /* Chrome10+,Safari5.1+ */
+          background: -o-linear-gradient(-45deg,  rgba(243,226,199,1) 0%,rgba(191,143,72,1) 18%,rgba(137,108,49,1) 51%,rgba(182,141,76,1) 82%,rgba(233,212,179,1) 100%); /* Opera 11.10+ */
+          background: -ms-linear-gradient(-45deg,  rgba(243,226,199,1) 0%,rgba(191,143,72,1) 18%,rgba(137,108,49,1) 51%,rgba(182,141,76,1) 82%,rgba(233,212,179,1) 100%); /* IE10+ */
+          background: linear-gradient(135deg,  rgba(243,226,199,1) 0%,rgba(191,143,72,1) 18%,rgba(137,108,49,1) 51%,rgba(182,141,76,1) 82%,rgba(233,212,179,1) 100%); /* W3C */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e9d4b3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+          text-align: center;
+                    font-family: helvetica;
+}
+          
+       
+      .tabs input[type=radio] {
+          position: absolute;
+          top: -9999px;
+          left: -9999px;
+}
+
+      .tabs {
+        width: 650px;
+        float: right;
+        list-style: none;
+        position: relative;
+        padding: 0;
+        margin: 75px auto;
+}
+
+      .tabs li{
+        float: left;
+}
+
+      .tabs label {
+          display: block;
+          padding: 10px 20px;
+          border-radius: 2px 2px 0 0;
+          color: #08C;
+          font-size: 24px;
+          font-weight: normal;
+          font-family: 'Lily Script One', helveti;
+          background: rgba(255,255,255,0.2);
+          cursor: pointer;
+          position: relative;
+          top: 3px;
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+}
+
+      .tabs label:hover {
+        background: rgba(255,255,255,0.5);
+        top: 0;
+}
+       
+      [id^=tab]:checked + label {
+        background: #08C;
+        color: white;
+        top: 0;
+}
+       
+      [id^=tab]:checked ~ [id^=tab-content] {
+          display: block;
+}
+
+      .tab-content{
+        z-index: 2;
+        display: none;
+        text-align: left;
+        width: 100%;
+        font-size: 20px;
+        line-height: 140%;
+        padding-top: 10px;
+        background: #08C;
+        padding: 15px;
+        color: white;
+        position: absolute;
+        top: 53px;
+        left: 0;
+        box-sizing: border-box;
+        -webkit-animation-duration: 0.5s;
+        -o-animation-duration: 0.5s;
+        -moz-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+}
+
+#page {
+  margin: 0 auto;
+  width: 980px;
+  background-color:#aadfeb;
+}
+
+/* NAVIGATION MENU */
+
+nav {
+  background: #4B3F37;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+ nav li {
+  display: inline-block;
+  padding: 10px;
+  background: #4B3F37;
+
+ }
+
+ nav a {
+  color: #fff;
+  text-decoration: none;
+
+ }
+
+ nav li:hover {
+  color: #000;
+  background: #507682;
+
+
+ }
+
+ aside {
+  
+  background: #507682;
+  width: 130px;
+  padding: 25px;
+  display: block;
+  
+
+ }
+
+ aside{
+  position: relative;
+  margin: 20px 0;
+}
+aside ul {
+  margin: 0;
+  padding: 0;
+}
+aside li {
+  margin: 0 5px 10px 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+aside a {
+  padding: 3px 12px;
+  text-decoration: none;
+  color: #DACECF;
+  line-height: 100%;
+}
+aside a:hover {
+  color: #000;
+}
